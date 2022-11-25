@@ -1,23 +1,24 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from "next/head";
+import Header from "@components/Header";
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Mass Protokol Dokümantasyonu</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <img src="https://mass.onrender.com/img/masslogo.png"></img>
+        <Header title="Mass Protokol Dokümantasyonu" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          <a href="https://mass.onrender.com/">
+            Yeni site yayına alınmıştır. Geliştirme aşamasında kullanılan bu
+            site artık aktif olmayacaktır.
+          </a>
         </p>
       </main>
-
-      <Footer />
     </div>
-  )
+  );
 }
